@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - kirna.dev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/tokens.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">kirna.dev</a>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="blog.html" class="nav-link active">Blog</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <button class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Our Blog</h1>
+                <p class="hero-subtitle">Insights, tutorials, and updates from our team of web development and design experts.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Categories -->
+    <section style="padding: var(--space-8) 0; background-color: var(--color-bg-secondary);">
+        <div class="container">
+            <div style="display: flex; gap: var(--space-4); flex-wrap: wrap; justify-content: center;">
+                <a href="#" class="btn btn-secondary" style="border-radius: var(--radius-full);">All</a>
+                <a href="#" class="btn btn-secondary" style="border-radius: var(--radius-full);">Development</a>
+                <a href="#" class="btn btn-secondary" style="border-radius: var(--radius-full);">Design</a>
+                <a href="#" class="btn btn-secondary" style="border-radius: var(--radius-full);">CMS</a>
+                <a href="#" class="btn btn-secondary" style="border-radius: var(--radius-full);">Tutorials</a>
+                <a href="#" class="btn btn-secondary" style="border-radius: var(--radius-full);">Business</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Post -->
+    <section style="padding: var(--space-16) 0 var(--space-8);">
+        <div class="container">
+            <h2>Featured Post</h2>
+            <div class="card" style="margin-top: var(--space-6); display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-8);">
+                <img src="https://via.placeholder.com/600x400" alt="Featured post image" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-md);">
+                <div>
+                    <span class="blog-category">Development</span>
+                    <h3 style="font-size: var(--text-4xl); margin-bottom: var(--space-4);">The Future of Web Development in 2025</h3>
+                    <p style="margin-bottom: var(--space-4);">Explore the latest trends and technologies shaping the future of web development. From AI-powered tools to new frameworks, discover what's next in the world of web development.</p>
+                    <div class="blog-meta" style="margin-bottom: var(--space-6);">
+                        <span>May 18, 2025</span> • <span>8 min read</span>
+                    </div>
+                    <a href="blog-article.html" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Posts -->
+    <section class="blog">
+        <div class="container">
+            <h2>Latest Posts</h2>
+            <div class="grid blog-grid">
+                <div class="card blog-card">
+                    <img src="https://via.placeholder.com/600x400" alt="Blog post image" class="blog-image">
+                    <span class="blog-category">Development</span>
+                    <h3 class="blog-title">Building Performance-First Websites</h3>
+                    <p class="blog-excerpt">Learn how to optimize your website for speed and performance to improve user experience and SEO rankings.</p>
+                    <div class="blog-meta">
+                        <span>May 15, 2025</span> • <span>5 min read</span>
+                    </div>
+                </div>
+                <div class="card blog-card">
+                    <img src="https://via.placeholder.com/600x400" alt="Blog post image" class="blog-image">
+                    <span class="blog-category">Design</span>
+                    <h3 class="blog-title">The Importance of Accessible Design</h3>
+                    <p class="blog-excerpt">Discover why accessibility should be a priority in your web design process and how to implement it effectively.</p>
+                    <div class="blog-meta">
+                        <span>May 8, 2025</span> • <span>4 min read</span>
+                    </div>
+                </div>
+                <div class="card blog-card">
+                    <img src="https://via.placeholder.com/600x400" alt="Blog post image" class="blog-image">
+                    <span class="blog-category">CMS</span>
+                    <h3 class="blog-title">Why We Love Kirby CMS</h3>
+                    <p class="blog-excerpt">Explore the benefits of using Kirby CMS for your website and how it compares to other content management systems.</p>
+                    <div class="blog-meta">
+                        <span>April 29, 2025</span> • <span>6 min read</span>
+                    </div>
+                </div>
+                <div class="card blog-card">
+                    <img src="https://via.placeholder.com/600x400" alt="Blog post image" class="blog-image">
+                    <span class="blog-category">Development</span>
+                    <h3 class="blog-title">Modern JavaScript Frameworks Comparison</h3>
+                    <p class="blog-excerpt">A detailed comparison of popular JavaScript frameworks to help you choose the right one for your next project.</p>
+                    <div class="blog-meta">
+                        <span>April 22, 2025</span> • <span>7 min read</span>
+                    </div>
+                </div>
+                <div class="card blog-card">
+                    <img src="https://via.placeholder.com/600x400" alt="Blog post image" class="blog-image">
+                    <span class="blog-category">Design</span>
+                    <h3 class="blog-title">Color Theory in Web Design</h3>
+                    <p class="blog-excerpt">Understanding color theory and how to apply it effectively in your web design projects for maximum impact.</p>
+                    <div class="blog-meta">
+                        <span>April 15, 2025</span> • <span>5 min read</span>
+                    </div>
+                </div>
+                <div class="card blog-card">
+                    <img src="https://via.placeholder.com/600x400" alt="Blog post image" class="blog-image">
+                    <span class="blog-category">Business</span>
+                    <h3 class="blog-title">Measuring ROI on Your Website Investment</h3>
+                    <p class="blog-excerpt">How to track and measure the return on investment for your website and digital marketing efforts.</p>
+                    <div class="blog-meta">
+                        <span>April 8, 2025</span> • <span>6 min read</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pagination -->
+            <div style="display: flex; justify-content: center; margin-top: var(--space-12);">
+                <div style="display: flex; gap: var(--space-2);">
+                    <a href="#" class="btn btn-secondary" style="width: 40px; height: 40px; padding: 0; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="#" class="btn btn-primary" style="width: 40px; height: 40px; padding: 0; display: flex; align-items: center; justify-content: center;">1</a>
+                    <a href="#" class="btn btn-secondary" style="width: 40px; height: 40px; padding: 0; display: flex; align-items: center; justify-content: center;">2</a>
+                    <a href="#" class="btn btn-secondary" style="width: 40px; height: 40px; padding: 0; display: flex; align-items: center; justify-content: center;">3</a>
+                    <span style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; color: var(--color-text-secondary);">...</span>
+                    <a href="#" class="btn btn-secondary" style="width: 40px; height: 40px; padding: 0; display: flex; align-items: center; justify-content: center;">8</a>
+                    <a href="#" class="btn btn-secondary" style="width: 40px; height: 40px; padding: 0; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section style="padding: var(--space-16) 0; background-color: var(--color-bg-secondary);">
+        <div class="container">
+            <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+                <h2>Stay Updated</h2>
+                <p style="margin-bottom: var(--space-6);">Subscribe to our newsletter to receive the latest updates, articles, and resources directly in your inbox.</p>
+                <div style="display: flex; gap: var(--space-2);">
+                    <input type="email" placeholder="Your email address" style="flex-grow: 1; padding: var(--space-3) var(--space-4); border-radius: var(--radius-md); border: var(--border-thin) solid var(--color-bg-tertiary); background-color: var(--color-bg-primary); color: var(--color-text-primary);">
+                    <button class="btn btn-primary">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid footer-grid">
+                <div>
+                    <div class="footer-logo">kirna.dev</div>
+                    <p class="footer-description">We build modern, fast, and user-focused websites that help businesses succeed in the digital landscape.</p>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#">Web Development</a></li>
+                        <li class="footer-link"><a href="#">UI/UX Design</a></li>
+                        <li class="footer-link"><a href="#">CMS Integration</a></li>
+                        <li class="footer-link"><a href="#">Maintenance</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#">About Us</a></li>
+                        <li class="footer-link"><a href="#">Blog</a></li>
+                        <li class="footer-link"><a href="#">Careers</a></li>
+                        <li class="footer-link"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="mailto:hello@kirna.dev">hello@kirna.dev</a></li>
+                        <li class="footer-link"><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>© 2025 kirna.dev. All rights reserved.</div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
